@@ -33,7 +33,7 @@ This SQL project analyzes credit card transactions across various cities and car
 | 8 | Weekend city with highest spend/transaction ratio |
 | 9 | City that reached 500th transaction fastest |
 
-> All solutions are available in `sql/credit_card_analysis.sql`.
+> All solutions are available in [`Credit Card Transaction Casestudy-1.sql`](Credit%20Card%20Transaction%20Casestudy-1.sql).
 
 ## 📈 Summary of Findings
 
