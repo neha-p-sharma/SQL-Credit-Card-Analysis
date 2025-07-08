@@ -1,6 +1,3 @@
-
-
-
 -- 1 - write a query to print top 5 cities with highest spends and their percentage contribution of total credit card spends
 with cte as
 (
@@ -23,7 +20,6 @@ order by total_spend desc
 
 
 -- 2 - write a query to print highest spend month and amount spent in that month for each card type
-
 with yr_mnt as
 (
 select card_type,
@@ -42,8 +38,6 @@ where rn=1
 
 -- 3 - write a query to print the transaction details(all columns from the table) for each card type when 
 -- it reaches a cumulative of 1000000 total spends(We should have 4 rows in the o/p one for each card type)
-
-
 with cte as
 (
 select *
@@ -59,7 +53,6 @@ where total_spend >=1000000
 where rn =1
 
 -- 4- write a query to find city which had lowest percentage spend for gold card type
-
 with gold_sales as
 (
 select city,
@@ -101,7 +94,6 @@ group by city
 
 
 -- 6 - write a query to find percentage contribution of spends by females for each expense type
-
 select exp_type,
 	sum(case when gender ='F' then amount else 0 end )*1.0/sum(amount)as per_female_contribution
 from credit_card_transcations
